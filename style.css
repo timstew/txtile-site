@@ -1,0 +1,247 @@
+@font-face {
+  font-family: dense;
+  src: url(Dense-Regular.otf);
+}
+
+@font-face {
+  font-family: chaletLon;
+  src: url(ChaletLondonNineteenSeventy.ttf);
+}
+
+a {text-decoration:none; color:#55acee;}
+a:visited {text-decoration:none; color:#55acee;}
+a:hover {text-decoration:none; color:#55acee; opacity: 0.7;}
+a:focus {text-decoration:none; color:#55acee;}
+a:hover, a:active {text-decoration:none; color:#55acee; opacity: 0.7;}
+
+body {
+  height: 100%;
+}
+
+.firstDiv {
+  background: url('bg9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-opacity: 0.7;
+  overflow: none;
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+.navbar {
+  padding: 10px;
+  background-color: #333;
+  border-style: none;
+  border-radius: 0;
+  min-width: 100%;
+}
+
+#logo {
+  margin-top: -12.5px;
+  margin-left: 10px;
+  height: 45px;
+  content: url('FINISHED.png');
+}
+
+#appStore {
+  margin-top: -15px;
+  height: 50px;
+  /*content: url('appStore.png');*/
+}
+
+.rightAlignLogo {
+  float: right;
+  margin-right: -20px;
+}
+
+#submit {
+  background-color: #FBFBFB;
+  color: #f50;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 49px;
+}
+
+#submit:hover {
+  background-color: #f50;
+  color: #FBFBFB;
+  border-color: #f50;
+}
+
+.phoneImage {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+#myform {
+  text-align: center;
+}
+
+.spacer {
+  height: 220px;
+}
+
+.mainLogo {
+  margin: auto;
+  margin-top: 80px;
+  display: block;
+  height: 95px;
+}
+
+#title {
+  margin-top: 40px;
+  color: #3C9727;
+  text-align: center;
+  font-size: 150px;
+  margin-bottom: -20px;
+  font-weight: lighter;
+  font-family: chaletLon;
+}
+
+#slogan {
+  margin-top: 30px;
+  color: white; 
+  text-align: center;
+  font-size: 53px;
+  margin-bottom: -20px;
+  font-weight: lighter;
+  font-family: dense;
+  /*text-shadow: 2px 2px black;*/
+}
+
+#underslogan {
+  margin-top: 35px;
+  color: white;
+  /*text-shadow: 2px 2px black;*/
+  text-align: center;
+  font-size: 35px;
+  font-weight: lighter;
+  font-family: dense;
+}
+
+.checkmark {
+  width: 300px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 5px;
+  background-color: black;
+  border-color: #f50;
+  border-style: solid;
+  border-width: 4px;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+#undercheck {
+  margin-left: -25px;
+  margin-top: -0px;
+  margin-bottom: 3px;
+  color: #f50;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  font-family: dense;
+  width: 150px;
+}
+
+.secondDiv {
+  margin-top: -20px;
+  margin-bottom: -100px;
+  height: 150px;
+  background-color: #333;
+  background-color: #FBFBFB;
+}
+
+.leftBottom {
+  /*top: 30;*/
+  bottom: -25px;
+  height: 25%;
+  text-align: center;
+}
+
+.rightBottom {
+  top:30px;
+  bottom: -25px;
+  height: 25%;
+  text-align: center;
+}
+
+.socialLabel {
+  color: #55acee;
+  text-align: center;
+  font-size: 35px;
+  font-weight: lighter;
+  font-family: dense;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 1s ease-in-out;
+  -webkit-animation: dash 1s ease-in-out;
+}
+
+.spin {
+  animation: spin 1s;
+  -webkit-animation: spin 1s;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes dash {
+ 0% {
+   stroke-dashoffset: 1000;
+ }
+ 100% {
+   stroke-dashoffset: 0
+ }
+}
+
+@keyframes dash {
+ 0% {
+   stroke-dashoffset: 1000;
+ }
+ 100% {
+   stroke-dashoffset: 0;
+ }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+  }
+
+  
+  @keyframes text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+  }
+}
